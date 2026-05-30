@@ -1,9 +1,9 @@
 @media (max-width: 1023.98px) {
   .mobile-profile-slot {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 
   .mobile-profile-slot + div {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 }
