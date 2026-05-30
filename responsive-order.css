@@ -13,6 +13,14 @@ main {
   flex: 1;
 }
 
+.contact-page main {
+  display: flex;
+}
+
+.contact-page main > section {
+  flex: 1;
+}
+
 .site-footer {
   margin-top: auto;
 }
