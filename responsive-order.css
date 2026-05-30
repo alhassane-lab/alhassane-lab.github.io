@@ -15,6 +15,8 @@ main {
 
 .contact-page main {
   display: flex;
+  min-height: calc(100vh - 11rem);
+  min-height: calc(100dvh - 11rem);
 }
 
 .contact-page main > section {
