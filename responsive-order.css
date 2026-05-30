@@ -1,0 +1,17 @@
+body > main > section:first-child > .grid > div:first-child {
+  order: 2;
+}
+
+body > main > section:first-child > .grid > div:nth-child(2) {
+  order: 1;
+}
+
+@media (min-width: 1024px) {
+  body > main > section:first-child > .grid > div:first-child {
+    order: 1;
+  }
+
+  body > main > section:first-child > .grid > div:nth-child(2) {
+    order: 2;
+  }
+}
