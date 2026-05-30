@@ -26,6 +26,7 @@
 
   .site-header nav {
     grid-column: 1 / -1;
+    grid-row: 2;
     justify-content: flex-start;
   }
 
