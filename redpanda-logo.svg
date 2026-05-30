@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Redpanda">
+  <defs>
+    <linearGradient id="redpandaGradient" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A1A"/>
+      <stop offset="1" stop-color="#FF3D00"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="52" height="52" rx="16" fill="#05080C"/>
+  <rect x="9" y="9" width="46" height="46" rx="14" fill="url(#redpandaGradient)"/>
+  <circle cx="20" cy="20" r="4" fill="#101820"/>
+  <circle cx="44" cy="20" r="4" fill="#101820"/>
+  <path d="M20 36C24.2 42.4 39.8 42.4 44 36" fill="none" stroke="#101820" stroke-width="5" stroke-linecap="round"/>
+  <path d="M24 31H40" stroke="#101820" stroke-width="4" stroke-linecap="round"/>
+  <text x="32" y="51" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#101820">RP</text>
+</svg>
