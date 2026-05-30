@@ -1,25 +1,9 @@
 @media (max-width: 1023.98px) {
-  body > main > section:first-child > .grid {
-    row-gap: 0;
-  }
-
-  body > main > section:first-child > .grid > div:first-child {
-    display: contents;
-  }
-
-  body > main > section:first-child > .grid > div:first-child > span,
-  body > main > section:first-child > .grid > div:first-child > h1,
-  body > main > section:first-child > .grid > div:first-child > p,
-  body > main > section:first-child > .grid > div:first-child > div:first-of-type {
-    order: 1;
-  }
-
-  body > main > section:first-child > .grid > div:nth-child(2) {
-    order: 2;
+  .mobile-profile-slot {
     margin-top: 2rem;
   }
 
-  body > main > section:first-child > .grid > div:first-child > div:nth-of-type(2) {
-    order: 3;
+  .mobile-profile-slot + div {
+    margin-top: 2rem;
   }
 }
