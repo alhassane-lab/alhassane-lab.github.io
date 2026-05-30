@@ -11,9 +11,13 @@
 @media (max-width: 767.98px) {
   .site-header > div {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, max-content) auto;
     align-items: center;
-    gap: 1rem;
+    justify-content: start;
+    column-gap: 0.75rem;
+    row-gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .site-header > div > a {
@@ -33,11 +37,11 @@
   .theme-toggle {
     grid-column: 2;
     grid-row: 1;
-    justify-self: end;
-    min-width: 4.6rem;
+    justify-self: start;
+    min-width: 4rem;
     height: 2rem;
-    padding-inline: 0.65rem;
-    font-size: 0.58rem;
-    letter-spacing: 0.12em;
+    padding-inline: 0.55rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
   }
 }
