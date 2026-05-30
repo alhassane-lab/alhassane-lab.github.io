@@ -1,3 +1,52 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+ .site-header nav .nav-button {
+  animation: none;
+}
+
+.theme-toggle {
+  animation: icon-float 3.6s ease-in-out infinite;
+}
+
+.theme-toggle [data-theme-icon] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  line-height: 1;
+  color: #f7feff;
+  text-shadow: 0 0 12px rgba(22, 237, 245, 0.65);
+  transition: transform 180ms ease, text-shadow 180ms ease;
+}
+
+html[data-theme="light"] .theme-toggle [data-theme-icon] {
+  color: #083847;
+  text-shadow: 0 0 10px rgba(12, 169, 198, 0.35);
+}
+
+html[data-theme="dark"] .theme-toggle [data-theme-icon] {
+  color: #fde68a;
+  text-shadow:
+    0 0 10px rgba(253, 230, 138, 0.42),
+    0 0 18px rgba(22, 237, 245, 0.22);
+}
+
 @media (max-width: 1023.98px) {
   .mobile-profile-slot {
     margin-top: 2.5rem;
@@ -11,9 +60,8 @@
 @media (max-width: 767.98px) {
   .site-header > div {
     display: grid;
-    grid-template-columns: minmax(0, max-content) auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
-    justify-content: start;
     column-gap: 0.75rem;
     row-gap: 1rem;
     padding-left: 1rem;
@@ -37,11 +85,17 @@
   .theme-toggle {
     grid-column: 2;
     grid-row: 1;
-    justify-self: start;
-    min-width: 4rem;
-    height: 2rem;
-    padding-inline: 0.55rem;
-    font-size: 0.55rem;
+    justify-self: end;
+    min-width: 4.35rem;
+    height: 2.15rem;
+    padding-inline: 0.6rem;
+    font-size: 0.58rem;
     letter-spacing: 0.1em;
+  }
+
+  .theme-toggle [data-theme-icon] {
+    width: 1.15rem;
+    height: 1.15rem;
+    font-size: 0.95rem;
   }
 }
